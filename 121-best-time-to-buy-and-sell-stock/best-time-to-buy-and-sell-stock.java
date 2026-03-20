@@ -5,10 +5,10 @@ class Solution {
         int maxProfit=0;
         for(int i=1;i<n;i++){
             if(prices[i]>buy){
-                maxProfit=Math.max(maxProfit, prices[i]-buy);
+                maxProfit=Math.max(maxProfit,prices[i]-buy);
             }
             buy=Math.min(buy,prices[i]);
         }
-        return maxProfit; 
+        return maxProfit;
     }
 }
